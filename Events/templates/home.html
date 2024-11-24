@@ -5,7 +5,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <div class="card bg-secondary mb-3" style="max-width: 20rem;">
+            {% if merry %}
+            <div class="card bg-primary mb-3" style="max-width: 20rem;">
                 <div class="card-header">
                     <h3 class="m-4">All Events</h3>
                 </div>
@@ -21,24 +22,18 @@
             <strong>Organizer:</strong>    {{ celeb.organizer }}<br><hr>
             
             {% endfor %}
-                
+            {% else %}
+            <div class="alert alert-dismissible alert-danger">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Oh snap!</strong> <a href="#" class="alert-link">No Events Here.</a> Try again later.
+              </div>
+           
                 </div>
               
-
-
-
-
-
-
-
-
 
         </div>
     </div>
 
 </div>
-
-
-
 
 {% endblock content %}

@@ -1,0 +1,68 @@
+<h1>Martoh<h1>
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h3 class="m-4">Participant</h3>
+    <div class="row">
+        <div class="col-12">
+           <form>
+  <div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputEvent" aria-describedby="eventHelp" placeholder="Event">  
+      <select class="form-select" id="exampleSelectNewYear">
+      <option>{ } </option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+
+    
+    </select>
+  </div>
+  <div class="mb-3">
+    
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+   
+  </div>
+  <div class="mb-3">
+    
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+   
+  </div>
+  <div class="mb-3">
+    
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number">
+   
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+            <!-- <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form> -->
+
+            <!-- <div class="card bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">
+                    <h3 class="m-4">All Participants</h3>
+                </div>
+                <div class="card-body">
+                    {% for participant in participants %}
+                    <h5 class="card-title">{{ participant.name }}</h5>
+                    <p class="card-text">Email: {{ participant.email }}</p>
+                    <p class="card-text">Phone: {{ participant.phone }}</p>
+                    <hr>
+                    {% endfor %}
+                </div> -->
+            
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

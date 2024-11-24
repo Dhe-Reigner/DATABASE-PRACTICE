@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h3 class="m-4">Participant</h3>
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Primary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+
+
+
+            <!-- <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form> -->
+
+            <!-- <div class="card bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">
+                    <h3 class="m-4">All Participants</h3>
+                </div>
+                <div class="card-body">
+                    {% for participant in participants %}
+                    <h5 class="card-title">{{ participant.name }}</h5>
+                    <p class="card-text">Email: {{ participant.email }}</p>
+                    <p class="card-text">Phone: {{ participant.phone }}</p>
+                    <hr>
+                    {% endfor %}
+                </div> -->
+            
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
