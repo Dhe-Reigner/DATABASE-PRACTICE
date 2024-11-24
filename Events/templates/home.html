@@ -1,1 +1,44 @@
-<h1>Martohl</h1>
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header">
+                    <h3 class="m-4">All Events</h3>
+                </div>
+                <div class="card-body">
+
+            {% for celeb in merry %}
+
+            <strong>Name:</strong>         {{ celeb.name }}<br>
+            <strong>Location:</strong>     {{ celeb.location }}<br>
+            <strong>Description:</strong>  {{ celeb.description }}<br>
+            <strong>Start Date:</strong>   {{ celeb.start_date }}<br>
+            <strong>End Date:</strong>     {{ celeb.end_date }}<br>
+            <strong>Organizer:</strong>    {{ celeb.organizer }}<br><hr>
+            
+            {% endfor %}
+                
+                </div>
+              
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+{% endblock content %}
