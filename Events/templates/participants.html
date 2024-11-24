@@ -6,12 +6,30 @@
     <h3 class="m-4">All Partriciipants</h3>
     <div class="row">
         <div class="col-12">
+{% if attendants %}
+<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
             {% for welcome in attendants %}
 Event: {{ welcome.event }}<br>
 Name:  {{ welcome.name }}<br>
 Email: {{ welcome.email }}<br>
 Phone: {{ welcome.phone_number }}<br>
 {% endfor %}
+  </div>
+</div>
+
+{% else %}
+<div class="alert alert-dismissible alert-danger">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>Oh snap!</strong> <a href="#" class="alert-link">No one has </a> registered yet.
+</div>
+{% endif %}
+
+
+
+
+
         </div>
     </div>
 
