@@ -19,7 +19,7 @@ EVENT = [
     ('new_year','New Year'),
     ('christmas','Christmas'),
     ('christmas_eve','Christmas Eve'),
-    ('halloween','Halloween'),
+  
 ]
 # Create your models here.
 
